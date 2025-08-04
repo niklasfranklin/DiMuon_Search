@@ -1,3 +1,7 @@
+# DiMuon Search
+
+Python script for analyzing dimuon events in icetray data frames.
+
 # Legend
 
 jobbatch: The scripts for sumbmitting slurm job arrays.
