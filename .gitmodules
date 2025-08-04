@@ -1,0 +1,3 @@
+[submodule "BDT/repo/sklearn-pypi-package"]
+	path = BDT/repo/sklearn-pypi-package
+	url = https://github.com/niklasfranklin/DiMuon_Search
