@@ -15,7 +15,7 @@ Set it up with the following:
 
 Now setup the icetray environment and activate your venv
 
-`ic_setup`
+`ic_setup '\n'`
 `icetray`
 `export VENV_PATH=/path/to/your/venv_name`
 `source $VENV_PATH/bin/activate`
