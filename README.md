@@ -11,7 +11,7 @@ repo: Folder with all the necessary repositories
 Proccessing levels through BDT requires a specific environnment.
 Set it up with the following:
 
-1.`virtualenv <venv_name>`
+1. `virtualenv <venv_name>`
 
 Now setup the icetray environment and activate your venv
 
