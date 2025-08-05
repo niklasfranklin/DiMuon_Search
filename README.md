@@ -39,6 +39,7 @@ Next, setup the IceTray environment and activate your venv:
 6. `virtualenv <venv_name>`
 7. `export VENV_PATH=/path/to/your/venv_name`
 8. `source $VENV_PATH/bin/activate`
+9. Done!
 
 Your `venv_name` will mainly be used for installing specific version of packages. the process-BDT scripts for example
 require specific versions of h5py, sklearn-pypi etc...
@@ -49,7 +50,8 @@ Here's the must-haves goin forward:
 `dnn_reco     1.0.0`
 `numpy        1.26.4`
 
-Make sure the env variable `$PYTHONPATH` includes your venv `/lib/python3/site-packages/` OVERS Icetray's
+Make sure the env variable `$PYTHONPATH` includes your venv `/lib/python3/site-packages/` 
+OVER Icetray's
 
 
 
