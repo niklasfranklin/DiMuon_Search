@@ -49,7 +49,7 @@ Here's the must-haves goin forward:
 `dnn_reco     1.0.0`
 `numpy        1.26.4`
 
-Make sure the env variable $PYTHONPATH includes your venv /lib/python3/site-packages/ OVERS Icetray's
+Make sure the env variable `$PYTHONPATH` includes your venv /lib/python3/site-packages/ OVERS Icetray's
 
 
 
