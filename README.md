@@ -2,7 +2,7 @@
 
 Python script for analyzing dimuon events in IceTray data frames.
 
-# Legend
+## Legend
 
 jobbatch: The scripts for sumbmitting slurm job arrays.
 
