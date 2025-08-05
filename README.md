@@ -17,6 +17,8 @@ repo: Folder containing all the necessary repositories
 
 You'll need to have the IceTray environment already installed.
 
+## Setup
+
 To access the contents of the repository, you'll need to clone it into your workspace using the command:
 
 1. `cd /your/favorie/directory`
