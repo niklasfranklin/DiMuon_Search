@@ -1,6 +1,6 @@
 # DiMuon Search
 
-Python script for analyzing dimuon events in icetray data frames.
+Python script for analyzing dimuon events in IceTray data frames.
 
 # Legend
 
