@@ -43,5 +43,11 @@ Next, setup the IceTray environment and activate your venv:
 Your `venv_name` will mainly be used for installing specific version of packages. the process-BDT scripts for example
 require specific versions of h5py, sklearn-pypi etc...
 
+Here's the must-haves goin forward:
+
+`h5py         3.14.0`
+'dnn_reco     1.0.0`
+`numpy        1.26.4`
+
 
 
