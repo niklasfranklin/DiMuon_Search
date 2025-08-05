@@ -3,7 +3,7 @@
 Python script for analyzing dimuon events in IceTray data frames.
 Created in association with Harvard LPPC (2025)
 
-### Legend
+### Legend:
 
 jobbatch: The scripts for sumbmitting slurm job arrays.
 
@@ -13,11 +13,11 @@ repo: Folder containing all the necessary repositories
 
 ## Installs
 
-### Prerequisites
+### Prerequisites:
 
 You'll need to have the IceTray environment already installed.
 
-### Setup
+### Setup:
 
 To access the contents of the repository, you'll need to clone it into your workspace using the command:
 
