@@ -8,7 +8,7 @@ jobbatch: The scripts for sumbmitting slurm job arrays.
 
 pyscripts: All the python script for creating plots and writing icetray data to h5
 
-repo: Folder with all the necessary repositories
+repo: Folder containing all the necessary repositories
 
 # Installs
 
