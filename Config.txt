@@ -116,6 +116,7 @@ SIREN:
   currenttype: both
   experiment: IceCube
   xsfiledir: myCharm
+
 DNN: {
   infile_dir: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/nfranklin/xfiles',
   infile_intermediate: 'deep/dnn',  # Alfonso's paths use some extra folders,
@@ -152,8 +153,10 @@ DNN: {
       #  dom_exclusions: ['BrightDOMs', 'SaturationWindows', 'BadDomsList', 'CalibrationErrata'],
       },
     },
-
-  add_transformer_reco: True,
+  add_event_generator: False,
+  build_event_generator_seed: False,
+  add_transformer_reco: False,
+  add_classifier: False,
   transformer_models: {
       INELASTICITY_B: {
         model_path: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/pweigel/GNN/software/src/nunet/models/inelasticity_reco_v3_8/models/model_7.pth',
@@ -194,7 +197,7 @@ BDT : {
   xs_location: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/CrossSections/',
   apply_cut: True,  # Apply the BDT cut
   bdt_cut: 0.83,  # BDT cut value
-  add_dnn_labels: True,  # Add the truth labels to the output, note: this will rerun the label module if they don't exist
+  add_dnn_labels: False,  # Add the truth labels to the output, note: this will rerun the label module if they don't exist
   write_i3: True,  # Write to i3 file
   drop_nullsplit: True,  # Remove null split frames
   write_h5: False,  # Write to hdf5 file

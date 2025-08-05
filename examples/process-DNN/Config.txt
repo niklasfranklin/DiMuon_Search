@@ -1,0 +1,208 @@
+# The config file used for L3 (XLevel), DNN and BDT processing. Change dir as needed.
+
+DNN_Cascade_Level3_config:
+  HDF_keys: []
+  basic_DNN:
+    batch_size: 32
+    dom_and_tw_exclusions:
+    - BrightDOMs
+    - SaturationWindows
+    - BadDomsList
+    - CalibrationErrata
+    ignore_misconfigured_settings_list:
+    - pulse_key
+    models_dir: /data/user/mhuennefeld/DNN_reco/models/exported_models
+    partial_exclusion: true
+    pulse_map_string: SplitInIceDSTPulses
+  bdt_configs:
+  - batch_size: 32
+    model_path: ( '/data/ana/PointSource/DNNCascade/utils/' 'exported_models/version-0.0/bdt_models/'
+      'BDT_bdt_max_depth_4_n_est_2000lr_0_02_seed_3_' 'train_size_50' )
+  - batch_size: 32
+    model_path: ( '/data/ana/PointSource/DNNCascade/utils/' 'exported_models/version-0.0/bdt_models/'
+      'BDT_bdt_max_depth_4_n_est_1000lr_0.01_seed_3_' 'train_size_50' )
+  cascade_DNN:
+    batch_size: 32
+    dom_and_tw_exclusions:
+    - SaturationWindows
+    - BadDomsList
+    - CalibrationErrata
+    ignore_misconfigured_settings_list:
+    - pulse_key
+    models_dir: /data/user/mhuennefeld/DNN_reco/models/exported_models
+    partial_exclusion: true
+    pulse_map_string: SplitInIceDSTPulses
+  egenerator_fast:
+    dom_and_tw_exclusions:
+    - BadDomsList
+    - CalibrationErrata
+    - SaturationWindows
+    models_dir: /data/user/mhuennefeld/exported_models/egenerator
+    partial_exclusion: true
+    pulse_key: SplitInIceDSTPulses
+  precut_DNN:
+    batch_size: 64
+    dom_and_tw_exclusions:
+    - SaturationWindows
+    - BadDomsList
+    - CalibrationErrata
+    ignore_misconfigured_settings_list:
+    - pulse_key
+    models_dir: /data/user/mhuennefeld/DNN_reco/models/exported_models
+    partial_exclusion: true
+    pulse_map_string: SplitInIceDSTPulses
+Det:
+  domeff: 0.99
+  gcdfile: /cvmfs/icecube.opensciencegrid.org/data/GCD/GeoCalibDetectorStatus_2020.Run134142.Pass2_V0.i3.gz
+  generated_domeff: 1
+  hole_ice: angsens/as.flasher_p1_0.35_p2_0
+  ice_model: spice_ftp-v3
+  in_dataset: null
+  move: false
+Global:
+  E_max: '6'
+  E_min: '2'
+  date: '0625'
+  flux: astro
+  injection: volume
+  nu_type: NuMu
+  num_events: 100
+  simulate: charm
+L1:
+  MinBiasPrescale: null
+  enable-gfu: false
+  gcdfile: /cvmfs/icecube.opensciencegrid.org/data/GCD/GeoCalibDetectorStatus_2020.Run134142.Pass2_V0.i3.gz
+  ic79_geometry: false
+  log-level: WARN
+  needs_wavedeform_spe_corr: false
+  photonicsdir: /cvmfs/icecube.opensciencegrid.org/data/photon-tables
+  qify: false
+L2:
+  dstfile: null
+  eheoutput: null
+  gapsfile: null
+  gcdfile: /cvmfs/icecube.opensciencegrid.org/data/GCD/GeoCalibDetectorStatus_2020.Run134142.Pass2_V0.i3.gz
+  icetopoutput: null
+  log-level: WARN
+  photonicsdir: /cvmfs/icecube.opensciencegrid.org/data/photon-tables
+  rootoutput: null
+  simulation: true
+  slopoutput: null
+L3:
+  dstfile: null
+  eheoutput: null
+  gapsfile: null
+  gcdfile: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/mc/Nominal/GeoCalibDetectorStatus_IC86.AVG_Pass2_SF0.99.i3.gz'
+  ice_model: 'spice_ftp-v3m'
+  spline_path: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/nfranklin/repo/MEOWS/resources/paraboloidCorrectionSpline.dat'
+  icetopoutput: null
+  log-level: WARN
+  photonicsdir: /cvmfs/icecube.opensciencegrid.org/data/photon-tables
+  rootoutput: null
+  simulation: true
+  slopoutput: null
+  
+Phot:
+  gcdfile: /cvmfs/icecube.opensciencegrid.org/data/GCD/GeoCalibDetectorStatus_2020.Run134142.Pass2_V0.i3.gz
+  generated_domeff: 1
+  hole_ice: angsens/as.flasher_p1_0.35_p2_0
+  ice_model: spice_ftp-v3
+  move: false
+  usegpus: true
+Reco:
+  gcdfile: /cvmfs/icecube.opensciencegrid.org/data/GCD/GeoCalibDetectorStatus_2020.Run134142.Pass2_V0.i3.gz
+  icemodel: ftp-v1
+SIREN:
+  currenttype: both
+  experiment: IceCube
+  xsfiledir: myCharm
+
+DNN: {
+  infile_dir: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/nfranklin/xfiles',
+  infile_intermediate: 'deep/dnn',  # Alfonso's paths use some extra folders,
+  infile_prefix: 'XLevel_00_11',
+  
+  outfile_dir: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/nfranklin/dnn/dnnfiles',
+  outfile_prefix: 'DNN_00_11',
+
+  processing_file: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/nfranklin/repo/MEOWS/processing/legacy/process-DNN.py',
+
+  meows_format: True,
+  run_range: [1, 5000],
+  runs_per_job: 250,
+  make_one_job: True,
+
+  gcdfile: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/mc/Nominal/GeoCalibDetectorStatus_IC86.AVG_Pass2_SF0.99.i3.gz',
+  use_gpu: True,
+  cpu_cores: 8,
+  drop_nullsplit: True,
+
+  add_dnn_reco: True,
+  dnn_reco_models_dir: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/ml_models',
+  dnn_reco_models: {
+       energy_reco_new: {
+         reco_type: 'energy',
+         pulse_key: 'InIceDSTPulses',
+         output_key: 'energy_reco_new',
+         dom_exclusions: ['SaturationWindows', 'BadDomsList', 'CalibrationErrata'],
+      # },
+      # apr26: {
+      #  reco_type: 'inelasticity',
+      #  pulse_key: 'InIceDSTPulses',
+      #  output_key: 'apr26',
+      #  dom_exclusions: ['BrightDOMs', 'SaturationWindows', 'BadDomsList', 'CalibrationErrata'],
+      },
+    },
+  add_event_generator: False,
+  build_event_generator_seed: False,
+  add_transformer_reco: False,
+  add_classifier: False,
+  transformer_models: {
+      INELASTICITY_B: {
+        model_path: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/pweigel/GNN/software/src/nunet/models/inelasticity_reco_v3_8/models/model_7.pth',
+        model_config: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/pweigel/GNN/software/src/nunet/configs/inelasticity_reconstruction_L256.yaml',
+        config_override: {
+          num_workers: 8,  # Can run into issues if we use too many workers on 1 cpu
+        },
+        pulse_key: 'TTPulses',
+        output_key: 'TransformerReco_inelasticity',
+        use_gpu: True,
+        batch_size: 256,
+      },
+  },
+}
+
+BDT : { 
+  # infile_dir: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/mc/Nominal/Ares/XLevel/domeff_0.97',
+  # infile_intermediate: 'deep/dnn',  # Alfonso's paths use some extra folders
+  # infile_prefix: '0723_NuMu_charm_astro_ranged_1e2-1e6_seed_',
+  infile_dir: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/nfranklin/DNN/dnnfiles_ranged',
+  infile_prefix: '0723_NuMu_charm_astro_ranged_1e2-1e6_seed_',
+  outfile_dir: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/nfranklin/BDT/bdtfiles_ranged',
+  outfile_prefix: '0723_NuMu_charm_astro_ranged_1e2-1e6_seed_',
+
+  processing_file: '/n/holylfs05/LABS/arguelles_delgado_lab/Everyone/nfranklin/MEOWS/processing/legacy/process-DNN.py',
+
+  meows_format: True,
+  run_range: [5000, 5999],
+  runs_per_job: 40,
+  make_one_job: True,
+
+  gcdfile: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/mc/Nominal/GeoCalibDetectorStatus_IC86.AVG_Pass2_SF0.99.i3.gz',  # GCD file
+  weights_path: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/ml_models/new_42_500_50000_0.02', # BDT weights path
+  output_key: 'BDT',  # Output key for the BDT score
+  add_lw: True,  # Add LeptonWeighter variables
+  lic_location: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/mc/Nominal/Ares/XLevel/domeff_0.97/Generation_data.lic',
+  flux: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/Fluxes/Flux_AIRS_sib_HG_th24_dm2_rk4/atmospheric_0_0.000000_0.000000_0.000000_0.000000_0.000000_0.000000.hdf5',
+  xs_location: '/n/holylfs05/LABS/arguelles_delgado_lab/Lab/meows_dnn/CrossSections/',
+  apply_cut: True,  # Apply the BDT cut
+  bdt_cut: 0.83,  # BDT cut value
+  add_dnn_labels: False,  # Add the truth labels to the output, note: this will rerun the label module if they don't exist
+  write_i3: True,  # Write to i3 file
+  drop_nullsplit: True,  # Remove null split frames
+  write_h5: False,  # Write to hdf5 file
+
+  keep_keys: ['DnnEnergy', 'apr26', 'MEOWS_Qsq_l', 'energy_sep1', 'energy_sep2', 'energy_sep3', 
+              'MuEx', 'MuExZenith', 'classification', 'DeepLearningReco_event_selection_egen_seed_energy_01',
+              'energy_sep3_new', 'LabelsDeepLearning', 'LabelsDeepLearning_p150', 'apr26', 'TransformerReco_inelasticity'],
+}
