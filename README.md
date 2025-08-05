@@ -5,9 +5,11 @@ Created in association with Harvard LPPC (2025)
 
 ### Legend:
 
+examples: Example scripts for processing I3 files from L2->XLevel->DNN->BDT
+
 jobbatch: The scripts for sumbmitting slurm job arrays.
 
-pyscripts: All the python script for creating plots and writing icetray data to h5
+pyscripts: All the python scripts for creating plots and writing icetray data to h5
 
 repo: Folder containing all the necessary repositories
 
