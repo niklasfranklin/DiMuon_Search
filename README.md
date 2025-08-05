@@ -46,7 +46,7 @@ require specific versions of h5py, sklearn-pypi etc...
 Here's the must-haves goin forward:
 
 `h5py         3.14.0`
-'dnn_reco     1.0.0`
+`dnn_reco     1.0.0`
 `numpy        1.26.4`
 
 
