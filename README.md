@@ -12,6 +12,11 @@ repo: Folder with all the necessary repositories
 
 # Installs
 
+To access the contents, you'll need to clone the repository into your workspace using the command:
+
+cd /your/favorie/directory
+`git clone <repo_link>`
+
 Proccessing levels through BDT requires a specific environnment.
 Set it up with the following:
 
@@ -24,6 +29,7 @@ Now setup the icetray environment and activate your venv
 4. `export VENV_PATH=/path/to/your/venv_name`
 5. `source $VENV_PATH/bin/activate`
 
-These are the packages you'll need with their versions.
+Next you'll need the appropriate packages,
+
 
 
