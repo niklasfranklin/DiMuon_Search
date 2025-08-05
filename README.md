@@ -37,7 +37,7 @@ Now setup the IceTray environment and activate your venv
 6. `export VENV_PATH=/path/to/your/venv_name`
 7. `source $VENV_PATH/bin/activate`
 
-Next you'll need the appropriate packages. Most come pre-packaged with IceTray but ones like MEOWS and dnn_reco
+You'll likely need the appropriate packages. Most come pre-packaged with IceTray but ones like MEOWS and dnn_reco
 will need to be pip installed as editable packages.
 
 8. `cd repo/repo_name`
