@@ -14,7 +14,7 @@ repo: Folder with all the necessary repositories
 
 To access the contents, you'll need to clone the repository into your workspace using the command:
 
-1. cd /your/favorie/directory
+1. `cd /your/favorie/directory`
 2. `git clone https://github.com/DiMuon_Search`
 
 Proccessing levels through BDT requires a specific environnment.
