@@ -7,7 +7,7 @@ This folder contains a series of figures produced by the scripts in 'pyscripts'.
 This plot measures how efficiently incoming neutrino energies carry over 
 between processing levels. The volume injection was used for this example.
 
-## eventcounts_volume.pmg
+## eventcounts_volume.png
 
 This plot measures how efficiently the dimuon events over a ten year period carry over bewteen
 processing levels. The volume injection was used for this example.
