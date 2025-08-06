@@ -51,7 +51,7 @@ Here's the must-haves going forward:
 
 `numpy        1.26.4`
 
-Make sure the env variable `$PYTHONPATH` includes your `venv_name/lib/python3/site-packages/` 
+Make sure the env variable `$PYTHONPATH` includes your `/venv_name/lib/python3/site-packages` 
 OVER Icetray's!
 
 
