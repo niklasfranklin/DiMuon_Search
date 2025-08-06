@@ -1,4 +1,4 @@
-# EXAMPLES
+# examples
 
 These scripts are examples of processing an I3File through the desired filters. Each contains an example file
 and should return another file as a result. The supplied shell scripts are what send the
