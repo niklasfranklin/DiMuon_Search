@@ -18,7 +18,7 @@ repo: Folder containing all the necessary repositories
 ### Prerequisites:
 
 You'll need to have the IceTray environment already installed.
-The version used for this project was py3-v4.3.0.
+The version used for this project was v1.11.1.
 
 You'll also need the appropriate packages. Most come pre-packaged with IceTray, but some
 specific versions of packages will be needed later. These can be installd in a virtual environment (venv).
