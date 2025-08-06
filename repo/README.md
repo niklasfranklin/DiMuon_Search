@@ -1,4 +1,4 @@
-# REPO
+# repo
 
 This folder contains all the necessary repositories for running script in DiMuon_Search.
 To install the needed packages, use the following commands:
