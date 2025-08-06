@@ -1,4 +1,4 @@
-# DiMuon Search
+# DiMuon_Search
 
 Python script for analyzing dimuon events in IceTray data frames.
 Created in association with Harvard LPPC (2025)
