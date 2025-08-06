@@ -50,7 +50,7 @@ Here are some of the must-haves:
 
 `numpy        1.26.4`
 
-While the venv is active, using a `pip install` command will install the packages in your venv python library. Make sure the env variable `$PYTHONPATH` includes the `/venv_name/lib/python3/site-packages` 
+While your `venv_name` is active, using a `pip install` command will install the packages in your virtual environment's python library. Make sure the env variable `$PYTHONPATH` includes the `/venv_name/lib/python3/site-packages` 
 OVER Icetray's!
 
 
