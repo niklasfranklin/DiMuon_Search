@@ -9,7 +9,7 @@ between processing levels. The volume injection was used for this example.
 
 ## eventcounts_volume.pmg
 
-This plot measures how efficiently the dimuon events carry over bewteen
+This plot measures how efficiently the dimuon events over a 1- year period carry over bewteen
 processing levels. The volume injection was used for this example.
 
 ## level_weights.png
