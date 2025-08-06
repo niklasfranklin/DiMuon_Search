@@ -15,7 +15,8 @@ processing levels. The volume injection was used for this example.
 ## level_weights.png
 
 This plot is a 1D histogram of the incoming neutrino energy, it is weighted by the dimuon event rate.
-There are multiple series, each representing a different level of processing.
+There are multiple series, each representing a different level of processing. The total number of
+events over a ten year period are in the plot's legend.
 
 ## muons.png
 
