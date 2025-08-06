@@ -1,4 +1,4 @@
-# PYSCRIPTS
+# pyscripts
 
 This folder contains the python scripts used for plotting the h5 data. Each script contains a loose description of what each produced plot represents.
 
