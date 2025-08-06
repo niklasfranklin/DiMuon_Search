@@ -45,9 +45,11 @@ require specific versions of h5py, sklearn-pypi etc...
 
 Here's the must-haves going forward:
 
-`h5py         3.14.0`,
-`dnn_reco     1.0.0`,
-`numpy        1.26.4`,
+`h5py         3.14.0`
+
+`dnn_reco     1.0.0`
+
+`numpy        1.26.4`
 
 Make sure the env variable `$PYTHONPATH` includes your `venv_name/lib/python3/site-packages/` 
 OVER Icetray's!
