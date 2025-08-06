@@ -21,7 +21,7 @@ You'll need to have the IceTray environment already installed.
 The version used for this project was py3-v4.3.0.
 
 You'll also need the appropriate packages. Most come pre-packaged with IceTray, but some
-specific versions of packages will be needed later. These can be installd in a virtual env (venv).
+specific versions of packages will be needed later. These can be installd in a virtual environment (venv).
 First, complete the setup.
 
 ### Setup:
@@ -40,10 +40,9 @@ Next, setup the IceTray environment and activate your venv:
 7. `export VENV_PATH=/path/to/your/venv_name`
 8. `source $VENV_PATH/bin/activate`
 
-Your `venv_name` will mainly be used for installing specific version of packages. the process-BDT scripts for example
-require specific versions of h5py, sklearn-pypi etc...
+As mentioned, your `venv_name` will mainly be used for installing specific version of packages. The 'process-BDT.py' script for example requires specific versions of h5py, sklearn-pypi etc...
 
-Here's the must-haves going forward:
+Here are some of the must-haves:
 
 `h5py         3.14.0`
 
@@ -51,7 +50,7 @@ Here's the must-haves going forward:
 
 `numpy        1.26.4`
 
-Make sure the env variable `$PYTHONPATH` includes your `/venv_name/lib/python3/site-packages` 
+While the venv is active, using a `pip install` command will install the packages in your venv python library. Make sure the env variable `$PYTHONPATH` includes the `/venv_name/lib/python3/site-packages` 
 OVER Icetray's!
 
 
