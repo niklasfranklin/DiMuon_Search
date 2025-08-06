@@ -1,8 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from icecube import icetray, dataio, simclasses, dataclasses
 import h5py
-#import pdbpp
 
 def divide(x,d):
     q = []

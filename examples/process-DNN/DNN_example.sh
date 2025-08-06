@@ -14,6 +14,4 @@
 
 python process-DNN.py -c Config.txt -i 0723_NuMu_charm_astro_ranged_1e2-1e6_seed_1_XLevel.zst -o 0723_NuMu_charm_astro_ranged_1e2-1e6_seed_1_DNN.zst
 
-# 'This will spit out the XLevel file as well as a log of cuts being made 'L3_cuts', ignore the cuts.'
-
 

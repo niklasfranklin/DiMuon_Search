@@ -128,9 +128,9 @@ def main(infile, outfile, config, debug):
     else:
         print('Not adding LW variables!')
 
-    tray.AddSegment(ApplyMEOWSBDT, "MEOWS_BDT",
-                    bdt_weights_path=cfg['weights_path'],
-                    output_key=cfg['output_key'])
+    # tray.AddSegment(ApplyMEOWSBDT, "MEOWS_BDT",
+    #                 bdt_weights_path=cfg['weights_path'],
+    #                 output_key=cfg['output_key'])
     
     if ('apply_cut' in cfg and cfg['apply_cut']):
         if cfg['bdt_cut'] != 0.83:  # Warn if the cut value is not the standard MEOWS one
