@@ -20,6 +20,11 @@ repo: Folder containing all the necessary repositories
 You'll need to have the IceTray environment already installed.
 The version used for this project was `v1.11.1.`
 
+In your `~/.bashrc` script, add the following lines:
+
+`alias ic_setup='eval $(/cvmfs/icecube.opensciencegrid.org/py3-v4.3.0/setup.sh)'`
+`alias icetray='/cvmfs/icecube.opensciencegrid.org/py3-v4.3.0/RHEL_7_x86_64/metaprojects/icetray/v1.11.1/env-shell.sh'`
+
 You'll also need the appropriate packages. Most come pre-packaged with IceTray, but some
 specific versions of packages will be needed later. These can be installd in a virtual environment (venv).
 First, complete the setup.
