@@ -7,7 +7,7 @@ Created in association with Harvard LPPC (2025)
 
 examples: Example scripts for processing I3 files from L2->XLevel->DNN->BDT
 
-jobbatch: The scripts for sumbmitting slurm job arrays.
+jobbatch: The scripts for submitting slurm job arrays.
 
 pyscripts: All the python scripts for creating plots and writing icetray data to h5
 
